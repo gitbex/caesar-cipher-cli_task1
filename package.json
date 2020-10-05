@@ -1,0 +1,23 @@
+{
+  "name": "caesar-cipher-cli_task1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gitbex/caesar-cipher-cli_task1.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/gitbex/caesar-cipher-cli_task1/issues"
+  },
+  "homepage": "https://github.com/gitbex/caesar-cipher-cli_task1#readme",
+  "dependencies": {
+    "nodemon": "^2.0.4",
+    "yargs": "^16.0.3"
+  }
+}
