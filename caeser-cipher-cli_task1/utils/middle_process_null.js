@@ -9,7 +9,7 @@ const middleProcessNull = ( callback ) => {
     if( typeof passedNumber === 'number') {
         process.stdin.on('data', (data) => {
           let result = callback(data.toString(), passedNumber )
-            process.stdout.write('\n' + 'this is output: ' + result);
+            process.stdout.write(' Output: ' + chalk.green(result));
             
         })
     } else {

@@ -20,7 +20,7 @@ readStreamPlain.on('error', err => process.stderr.write(chalk.inverse.red(err.me
             const readResult = chunk.toString();
                const codedResult = callback(readResult, passedNumber)
        
-               process.stdout.write('\n' + 'This is output: ' + codedResult);
+               process.stdout.write(' Output: ' + chalk.green(codedResult));
 
              })      
     }  
