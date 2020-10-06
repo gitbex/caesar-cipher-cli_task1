@@ -8,6 +8,7 @@ const yargs = require('yargs').argv;
 const encode = require('./utils/coder');
 const decode = require('./utils/decoder')
 
+//! Version one
 if(Object.keys(yargs).length == 4){
   
   if (yargs.action || yargs.a === 'encode') {
@@ -16,20 +17,22 @@ if(Object.keys(yargs).length == 4){
   } else if (yargs.action || yargs.a === 'decode') {
     middleProcessNull(decode)
   } else {
-    console.log(chalk.inverse.red('Please provide correct command'));
+    console.error(chalk.inverse.red('Please provide correct command'));
   }
-} // end;
+} //! end;
 
+
+//! Version two
 if(Object.keys(yargs).length == 5 ){
   
   if (yargs.action || yargs.a === 'encode') {             
     
     if(yargs.o || yargs.output) {
       middleProcessOutput5(encode)
-    }
+    } else
     if(yargs.i || yargs.input){
       middleProcessInput5(encode)
-    }
+    } else { console.error(chalk.inverse.red('pls provide correct command'));}
     
   } else 
     if (yargs.action || yargs.a === 'decode') {
@@ -39,13 +42,15 @@ if(Object.keys(yargs).length == 5 ){
       } else
       if(yargs.i || yargs.input){
         middleProcessInput5(decode)
-      } else { console.log(chalk.inverse.red('pls provide correct path')); }
-      
+      } else { console.error(chalk.inverse.red('pls provide correct path')); }
+     
   } else {
-    console.log(chalk.inverse.red('Please provide correct command'));
+    console.error(chalk.inverse.red('Please provide correct command'));
   }
-} // end;
+} //! end;
 
+
+//! Version three
  if(Object.keys(yargs).length == 6) {
 
   if (yargs.action || yargs.a === 'encode') {
@@ -54,7 +59,10 @@ if(Object.keys(yargs).length == 5 ){
   } else if (yargs.action || yargs.a === 'decode') {
     middleProcess6(decode)
   } else {
-    console.log(chalk.inverse.red('Please provide correct command'));
+    console.error(chalk.inverse.red('Please provide correct command'));
   }
-  
-} // end;
+} //! end;
+
+  if(Object.keys(yargs).length < 4) {
+    console.error(chalk.inverse.red('Please provide correct command'));
+  }
