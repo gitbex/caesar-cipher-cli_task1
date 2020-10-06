@@ -5,7 +5,7 @@
 
 **1: Cammand can be used in short or in full**
 
-```$ node app.js -a encode -s 7 -i "./input.txt" -o "./output.txt"```
+```$ node app.js -a encode -s 7 -i "./input.txt" -o "./output.txt"```\
 
 
 
