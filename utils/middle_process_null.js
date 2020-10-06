@@ -12,6 +12,8 @@ const middleProcessNull = ( callback ) => {
             process.stdout.write('\n' + 'this is output: ' + result);
             
         })
+    } else {
+        console.log(chalk.inverse.red('pls provide shift'));
     }
 }
 module.exports = middleProcessNull;

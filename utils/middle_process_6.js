@@ -18,7 +18,7 @@ const procCoded = require('./streamFile');
           procCoded(callback, passedNumber);
           } 
           else {
-            console.log('Please provide correct file names and path');
+            console.log(chalk.inverse.red('Please provide correct file names and path'));
           }
 }
 }

@@ -4,8 +4,8 @@ const pathInput = yargs.i !== undefined ? yargs.i : yargs.input;
 const pathOutput = yargs.o !== undefined ? yargs.o : yargs.output
 const readStreamPlain = fs.createReadStream(pathInput);
 const writerStreamCoded = fs.createWriteStream(pathOutput, {flags:'a'})
-writerStreamCoded.on('error', err => process.stderr.write(err.message));
-readStreamPlain.on('error', err => process.stderr.write(err.message));
+writerStreamCoded.on('error', err => process.stderr.write(chalk.inverse.red(err.message)));
+readStreamPlain.on('error', err => process.stderr.write(chalk.inverse.red(err.message)));
 
 const procCoded = (callback, shift ) => {
     

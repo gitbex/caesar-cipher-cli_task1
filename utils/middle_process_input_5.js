@@ -10,7 +10,7 @@ const middleProcessInput5 = ( callback ) => {
     
 const pathInput = yargs.i !== undefined ? yargs.i : yargs.input;
 const readStreamPlain = fs.createReadStream(pathInput);
-readStreamPlain.on('error', err => process.stderr.write(err.message));
+readStreamPlain.on('error', err => process.stderr.write(chalk.inverse.red(err.message)));
     
     
     if( typeof passedNumber === 'number') { 
@@ -20,7 +20,7 @@ readStreamPlain.on('error', err => process.stderr.write(err.message));
             const readResult = chunk.toString();
                const codedResult = callback(readResult, passedNumber)
        
-               process.stdout.write('\n' + 'this is output: ' + codedResult);
+               process.stdout.write('\n' + 'This is output: ' + codedResult);
 
              })      
     }  

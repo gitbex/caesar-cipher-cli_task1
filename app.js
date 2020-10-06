@@ -16,7 +16,7 @@ if(Object.keys(yargs).length == 4){
   } else if (yargs.action || yargs.a === 'decode') {
     middleProcessNull(decode)
   } else {
-    console.log('Please provide correct command');
+    console.log(chalk.inverse.red('Please provide correct command'));
   }
 } // end;
 
@@ -36,13 +36,13 @@ if(Object.keys(yargs).length == 5 ){
       
       if(yargs.o || yargs.output) {
         middleProcessOutput5(decode)
-      }
+      } else
       if(yargs.i || yargs.input){
         middleProcessInput5(decode)
-      }
+      } else { console.log(chalk.inverse.red('pls provide correct path')); }
       
   } else {
-    console.log('Please provide correct command');
+    console.log(chalk.inverse.red('Please provide correct command'));
   }
 } // end;
 
@@ -54,7 +54,7 @@ if(Object.keys(yargs).length == 5 ){
   } else if (yargs.action || yargs.a === 'decode') {
     middleProcess6(decode)
   } else {
-    console.log('Please provide correct command');
+    console.log(chalk.inverse.red('Please provide correct command'));
   }
   
 } // end;

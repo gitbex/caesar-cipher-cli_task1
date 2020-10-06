@@ -8,7 +8,7 @@ const middleProcessOutput5 = ( callback ) => {
     
 const pathOutput = yargs.o !== undefined ? yargs.o : yargs.output
 const writerStreamCoded = fs.createWriteStream(pathOutput, {flags:'a'})
-writerStreamCoded.on('error', err => process.stderr.write(err.message));  
+writerStreamCoded.on('error', err => process.stderr.write(chalk.inverse.red(err.message)));  
     
     if( typeof passedNumber === 'number') { 
                  
