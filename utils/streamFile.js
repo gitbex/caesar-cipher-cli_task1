@@ -18,11 +18,6 @@ const procCoded = (callback, shift ) => {
                 writerStreamCoded.write(codedResult,'UTF8')
 
              })
-     
-    
-
-
-   
     
 }
 

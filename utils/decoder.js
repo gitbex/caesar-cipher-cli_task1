@@ -9,7 +9,6 @@ const decoder = (str,s) => {
 
         for(let j=0; j<letters.length; j++){
             if(letters[j]===str){
-                    // if(j<=25 && (j+shift) <= 25 && (j+shift) >= 0) {
                         if((j - shift) >= 0) {
                     result += letters[j - shift];
                 } else if ((j - shift) < 0 ) {

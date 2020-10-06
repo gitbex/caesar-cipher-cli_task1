@@ -7,7 +7,6 @@ const middleProcess6 = require('./utils/middle_process_6')
 const yargs = require('yargs').argv;
 const encode = require('./utils/coder');
 const decode = require('./utils/decoder')
-const commandOutput = yargs.o !== undefined ? yargs.o : yargs.output
 
 if(Object.keys(yargs).length == 4){
   
@@ -58,7 +57,6 @@ if(Object.keys(yargs).length == 5 ){
   } else {
     console.log('Please provide correct command');
   }
-  
   
 } // end;
 

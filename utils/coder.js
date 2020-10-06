@@ -41,8 +41,6 @@ const encodeAny = (str, number) => {
    return result;
 }
 
-// console.log(encodeAny('Bekhruz Mirrakhimov? He is a smart guy!', -104))
-
 module.exports = encodeAny;
 
 
