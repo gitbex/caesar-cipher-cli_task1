@@ -40,5 +40,3 @@ const decodeAny = (str, number) => {
 }
 
 module.exports = decodeAny;
-
-
