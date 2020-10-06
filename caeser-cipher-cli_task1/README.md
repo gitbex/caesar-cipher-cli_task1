@@ -12,7 +12,7 @@
 
 ```$ node app.js --action encode --shift 7 --input plain.txt --output encoded.txt```
 
-```$ node app.js --action decode --shift 7 --input decoded.txt --output plain.txt```  
+```$ node app.js --action decode --shift 7 --input decoded.txt --output plain.txt```
 <br/><br/>
 
 **3: Output or Input or both file can be skipped**
