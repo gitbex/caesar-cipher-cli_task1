@@ -1,4 +1,3 @@
-
 const alphabet = "abcdefghijklmnopqrstuvwxyz";
 const letters = alphabet.split('')
 
@@ -15,8 +14,7 @@ const decoder = (str,s) => {
                     result += letters[j + (26 - shift)];
                 } else {
                     result += letters[j + (shift - 26)];
-                }
-                
+                }   
             } 
         }
 return result;

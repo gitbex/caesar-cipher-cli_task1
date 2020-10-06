@@ -1,22 +1,18 @@
 const chalk = require('chalk');
-const fs = require('fs');
 const yargs = require('yargs').argv;
 
 const passedNumber = yargs.shift !== undefined ? yargs.shift : yargs.s;
 
+
+
 const middleProcess6 = ( callback ) => {
     
-  const pathInput = yargs.i !== undefined ? yargs.i : yargs.input;
+const pathInput = yargs.i !== undefined ? yargs.i : yargs.input;
 const pathOutput = yargs.o !== undefined ? yargs.o : yargs.output
-const readStreamPlain = fs.createReadStream(pathInput);
-const writerStreamCoded = fs.createWriteStream(pathOutput)
-writerStreamCoded.on('error', err => process.stderr.write(err.message));
-readStreamPlain.on('error', err => process.stderr.write(err.message));
-
-  
+const procCoded = require('./streamFile');
     
     if( typeof passedNumber === 'number') { 
-        const procCoded = require('./streamFile');
+      
           if((pathInput !== '') && 
           (pathOutput !== '')) {
           procCoded(callback, passedNumber);
@@ -24,8 +20,6 @@ readStreamPlain.on('error', err => process.stderr.write(err.message));
           else {
             console.log('Please provide correct file names and path');
           }
-
-    
 }
 }
 module.exports = middleProcess6;

@@ -8,11 +8,9 @@ const passedNumber = yargs.shift !== undefined ? yargs.shift : yargs.s;
 
 const middleProcessInput5 = ( callback ) => {
     
-    const pathInput = yargs.i !== undefined ? yargs.i : yargs.input;
-const pathOutput = yargs.o !== undefined ? yargs.o : yargs.output
+const pathInput = yargs.i !== undefined ? yargs.i : yargs.input;
 const readStreamPlain = fs.createReadStream(pathInput);
 readStreamPlain.on('error', err => process.stderr.write(err.message));
-    
     
     
     if( typeof passedNumber === 'number') { 
@@ -24,8 +22,7 @@ readStreamPlain.on('error', err => process.stderr.write(err.message));
        
                process.stdout.write('\n' + 'this is output: ' + codedResult);
 
-             })
-       
+             })      
     }  
 }
 module.exports = middleProcessInput5;

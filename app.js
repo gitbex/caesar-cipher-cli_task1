@@ -47,8 +47,7 @@ if(Object.keys(yargs).length == 5 ){
 } // end;
 
  if(Object.keys(yargs).length == 6) {
-  
-  console.log(6);
+
   if (yargs.action || yargs.a === 'encode') {
     middleProcess6(encode)
     
