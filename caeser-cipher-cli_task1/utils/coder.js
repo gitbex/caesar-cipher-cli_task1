@@ -41,5 +41,3 @@ const encodeAny = (str, number) => {
 }
 
 module.exports = encodeAny;
-
-
