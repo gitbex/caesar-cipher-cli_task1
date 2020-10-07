@@ -8,7 +8,7 @@
 ```npm install```  
 
 
-**1: Cammand can be used in short or in full**
+**1: Commands can be used in short or in full**
 
 ```$ node app.js -a encode -s 7 -i "./plain.txt" -o "./coded.txt"```
 <br/><br/>
@@ -20,7 +20,7 @@
 ```$ node app.js --action decode --shift 7 --input coded.txt --output plain.txt```
 <br/><br/>
 
-**3: Output or Input or both file can be skipped**
+**3: Output or Input or both files can be skipped**
 
 ```$ node app.js --action decode --shift 7 --output plain.txt```
 
