@@ -1,6 +1,10 @@
 
 # Usage example:
 
+**Installation:**
+```git clone https://github.com/gitbex/caesar-cipher-cli_task1.git```
+```cd /caesar-cipher-cli_task1```
+```npm install```  
 
 
 **1: Cammand can be used in short or in full**
@@ -21,4 +25,7 @@
 
 ```$ node app.js --action decode --shift 7 --input decoded.txt```
 
-```$ node app.js --action decode --shift 7```
+```$ node app.js --action decode --shift 7```  
+
+**Exit**
+```Ctrl + c```
