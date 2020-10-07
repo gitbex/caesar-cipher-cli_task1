@@ -2,8 +2,8 @@
 # Usage example:
 
 **Installation:**
-```git clone https://github.com/gitbex/caesar-cipher-cli_task1.git```
-```cd /caesar-cipher-cli_task1```
+```git clone https://github.com/gitbex/caesar-cipher-cli_task1.git```  
+```cd /caesar-cipher-cli_task1```  
 ```npm install```  
 
 
